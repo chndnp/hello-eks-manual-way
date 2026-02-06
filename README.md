@@ -40,7 +40,7 @@ FastAPI Pod (Docker image from ECR)
 From now on, do everything in this region only.
 
 ## PHASE 2 – Create ECR (Docker Image Registry)
-### Create Repository
+**Create Repository**
 1. Go to ECR
 2. Click Create repository
 3. Choose:
@@ -48,7 +48,7 @@ From now on, do everything in this region only.
   Repository name: hello-fastapi
   Click Create repository
 
-### Push Your Docker Image to ECR
+**Push Your Docker Image to ECR**
 1. Click your repo → View push commands
 2. AWS shows 4 commands. Run them in your terminal exactly. Example:
 ```
@@ -83,7 +83,8 @@ After this:
 ## PHASE 4 – Create EKS Cluster
 1. Go to EKS
 2. Click Add cluster → Create
-3. Fill:
+3. Do not choose the auto-mode as it incurs extra cost, and we don't need its capabilties for this project.
+4. Fill:
 ```
 | Field                | Value                              |
 | -------------------- | ---------------------------------- |
@@ -93,11 +94,12 @@ After this:
 ```
 > Make sure the role has the policy 'AmazonEKSClusterPolicy'
 4. Click Next
-#### Networking Page
+**Networking Page**
 - VPC: hello-vpc
 - Subnets: Select all private subnets
 - Endpoint access: Public and private
-5. Click Create. Takes ~10mins
+5. Leave every other settings/fields as is.
+6. Click Create. Takes ~10mins
 
 ## PHASE 5 – Add Worker Nodes (EC2)
 Your cluster currently has zero machines.
