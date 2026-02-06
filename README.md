@@ -94,7 +94,8 @@ After this:
 ```
 > Make sure the role has the policy 'AmazonEKSClusterPolicy'
 4. Click Next
-**Networking Page**
+  
+**Networking Page:**
 - VPC: hello-vpc
 - Subnets: Select all private subnets
 - Endpoint access: Public and private
