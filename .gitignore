@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables / secrets
+.env
+
+# Logs
+*.log
+
+# OS / Editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Kubernetes local configs
+*.kubeconfig
+
+# Docker
+*.pid
