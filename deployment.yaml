@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-eks-manual-way
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-eks-manual-way
+  template:
+    metadata:
+      labels:
+        app: hello-eks-manual-way
+    spec:
+      containers:
+        - name: hello-eks-manual-way
+          image: 5432456465.dkr.ecr.ap-zzz-1.amazonaws.com/hello-eks-manual-way:1.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000

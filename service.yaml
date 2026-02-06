@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-eks-manual-way-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: hello-eks-manual-way
+  ports:
+    - port: 80
+      targetPort: 8000
