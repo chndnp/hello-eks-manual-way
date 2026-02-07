@@ -174,6 +174,19 @@ kubectl delete deploy hello-eks-manual-way
 After deleting the `svc`, the load balancer should also be ideally deleted. Just double check it. Bilkul riks nai lene ka.  
 
 ## Next Up
-Automate all of the above.  
+- Make it a little bit more production like (not completely, yet):
+   - Buy and host a domain
+   - route 53 public and private hosted zones
+   - internet-facing and internal-facing ALBs created via AWS load balancer controller and route-based ingress
+   - ACM to manage SSL certificates
+   - 2 components with various APIs for public and private.
+- Automate all of the above with:
+   - IaC (terraform) to manage the infra
+   - CICD (github workflows) for automated builds and deployments
+- Observability setup- monitoring, logging, tracing.
+- Crossplane to manage the infra as k8s objects.
+- Security
+- Cost Management
+- Hosting AI applications
   
 `Ashte`
