@@ -68,15 +68,16 @@ After this:
 3. Choose VPC and more
 4. Fill:
 ```
-| Setting         | Value              |
-| --------------- | ------------------ |
-| Name            | `hello-vpc`        |
-| IPv4 CIDR       | default            |
-| AZs             | 2                  |
-| Public subnets  | 2                  |
-| Private subnets | 2                  |
-| NAT gateways    | 1 (to reduce cost) |
-| VPC endpoints   | None               |
+| Setting               | Value              |
+| --------------------- | ------------------ |
+| Name                  | hello-vpc          |
+| IPv4 CIDR             | default            |
+| AZs                   | 2                  |
+| Public subnets        | 2                  |
+| Private subnets       | 2                  |
+| NAT gateways          | 1 (to reduce cost) |
+| VPC endpoints         | None               |
+| Enable DNS Hostanames | Yes                |
 ```
 5. Click Create VPC. Wait till status = Available
 
