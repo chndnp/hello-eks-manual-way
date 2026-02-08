@@ -43,10 +43,10 @@ From now on, do everything in this region only.
 **Create Repository**
 1. Go to ECR
 2. Click Create repository
-3. Choose:
-  Visibility: Private
-  Repository name: hello-fastapi
-  Click Create repository
+3. Choose:  
+  Visibility: Private  
+  Repository name: hello-fastapi  
+  Click Create repository  
 
 **Push Your Docker Image to ECR**
 1. Click your repo → View push commands
